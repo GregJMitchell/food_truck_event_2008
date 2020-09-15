@@ -9,4 +9,8 @@ class FoodTruck
     return 0 if @inventory.keys.include?(item) == false
     @inventory[item]
   end
+
+  def stock(item, amount)
+    @inventory[item] = amount
+  end
 end

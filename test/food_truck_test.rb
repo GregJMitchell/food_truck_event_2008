@@ -26,7 +26,8 @@ class FoodTruckTest <Minitest::Test
 
   def test_it_can_add_stock
     hash = {}
-    expected = hash[@item1] = 30
+    hash[@item1] = 30
+    expected = hash
     @food_truck.stock(@item1, 30)
 
     assert_equal expected, @food_truck.inventory
