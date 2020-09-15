@@ -40,6 +40,9 @@ class EventTest <Minitest::Test
   end
 
   def test_it_can_find_food_truck_that_sells_item
+    @event.add_food_truck(@food_truck1)
+    @event.add_food_truck(@food_truck2)
+    @event.add_food_truck(@food_truck3)
     @food_truck1.stock(@item1, 35)
     @food_truck1.stock(@item2, 7)
     @food_truck2.stock(@item4, 50)
