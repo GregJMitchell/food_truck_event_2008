@@ -4,4 +4,9 @@ class FoodTruck
     @name = name
     @inventory = {}
   end
+
+  def check_stock(item)
+    return 0 if @inventory.keys.include?(item) == false
+    @inventory[item]
+  end
 end
