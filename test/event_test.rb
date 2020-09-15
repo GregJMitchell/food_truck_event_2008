@@ -86,7 +86,6 @@ class EventTest <Minitest::Test
           food_trucks: [@food_truck2, @food_truck3]
         },
       }
-
       assert_equal expected, @event1.total_inventory
   end
 end
